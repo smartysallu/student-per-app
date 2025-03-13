@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 def load_model():
-    with open('./lr_app/linear_regression_model.pkl','rb') as file:
+    with open('linear_regression_model.pkl','rb') as file:
         model , scaler , le = pickle.load(file)
     return model , scaler , le
 
